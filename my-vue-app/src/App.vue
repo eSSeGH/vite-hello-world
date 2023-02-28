@@ -1,5 +1,9 @@
 <script>
+import AppTitle from './components/AppTiltle.vue'
 export default {
+  components: {
+    AppTitle
+  },
   data() {
     return {
       message: 'ciao mondo'
@@ -24,9 +28,7 @@ export default {
   </div>
   <HelloWorld msg="Vite + Vue" />
 
-  <div>
-    <h1>{{ message }}</h1>
-  </div>
+  <AppTitle />
 </template>
 
 <style scoped>
