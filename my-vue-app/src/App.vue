@@ -1,5 +1,16 @@
-<script setup>
-
+<script>
+export default {
+  data() {
+    return {
+      message: 'ciao mondo'
+    }
+  },
+  methods: {
+    sayHello() {
+      console.log("ciao")
+    }
+  }
+}
 </script>
 
 <template>
@@ -12,6 +23,10 @@
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  <div>
+    <h1>{{ message }}</h1>
+  </div>
 </template>
 
 <style scoped>
